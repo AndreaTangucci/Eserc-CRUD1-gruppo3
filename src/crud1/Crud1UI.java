@@ -4,13 +4,16 @@ package crud1;
  *
  * @author Tamara
  */
-public class Crud1UI extends javax.swing.JFrame {
+public class Crud1UI extends javax.swing.JFrame implements CrudUIAutomabile{
+    
+    private Automa automa;
 
     /**
      * Creates new form Crud1UI
      */
     public Crud1UI() {
         initComponents();
+        automa = new Automa(this);
     }
 
     /**
@@ -275,4 +278,29 @@ public class Crud1UI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldCodice;
     private javax.swing.JTextField jTextFieldDescrizione;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void vaiAStatoRicerca() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void vaiAStatoAggiungi() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void vaiAStatoVisualizza() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void vaiAStatoRimuovi() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void vaiAStatoModifica() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
