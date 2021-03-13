@@ -17,6 +17,10 @@ public class Automa implements State{
 
     public class Ricerca implements State{
 
+        public Ricerca() {
+            gui.vaiAStatoRicerca();
+        }
+
         @Override
         public void next(Event e) {
             if (e instanceof AddEvent){
@@ -34,6 +38,10 @@ public class Automa implements State{
     
     public class Rimuovi implements State{
 
+        public Rimuovi() {
+            gui.vaiAStatoRimuovi();
+        }
+
         @Override
         public void next(Event e) {
             if (e instanceof ConfermaEvent){
@@ -50,6 +58,10 @@ public class Automa implements State{
     
     public class Modifica implements State{
 
+        public Modifica() {
+            gui.vaiAStatoModifica();
+        }
+
         @Override
         public void next(Event e) {
             if (e instanceof ConfermaEvent){
@@ -65,6 +77,10 @@ public class Automa implements State{
     }
     
     public class Visualizza implements State{
+
+        public Visualizza() {
+            gui.vaiAStatoVisualizza();
+        }
 
         @Override
         public void next(Event e) {
@@ -89,6 +105,10 @@ public class Automa implements State{
     }
     
     public class Aggiungi implements State{
+
+        public Aggiungi() {
+            gui.vaiAStatoAggiungi();
+        }
 
         @Override
         public void next(Event e) {
